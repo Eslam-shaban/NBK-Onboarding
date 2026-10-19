@@ -3,37 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Systems &amp; Portals · NBK-E Monitoring Onboarding</title>
-<link rel="stylesheet" href="css/style.css">
+<title data-content-text="systemsPage.pageTitle">Systems &amp; Portals · NBK-E Monitoring Onboarding</title>
+<link rel="stylesheet" href="css/style.css" data-content-attrs="{&quot;href&quot;:&quot;assets.stylesheet&quot;}">
 </head>
-<body>
+<body data-page="systems.html">
 
 <div class="mobile-top">
-  <a class="brand" href="index.html">
-    <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"></div>
+  <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+    <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt" data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}"></div>
   </a>
-  <nav class="mobile-nav">
-    <a href="index.html">Overview</a>
-    <a href="access.html">Access</a>
-    <a href="systems.html" class="active">Systems</a>
-  </nav>
+  <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en" lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+<nav class="mobile-nav" data-navigation="mobile"><a href="index.html">Overview</a><a href="access.html">Access</a><a href="systems.html" class="active" aria-current="page">Systems</a><a href="atm.html">ATM</a><a href="infrastructure.html">Infrastructure</a></nav>
 </div>
 
 <div class="shell">
   <aside class="sidebar">
-    <a class="brand" href="index.html">
-      <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"></div>
+    <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+      <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt" data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}"></div>
       <div>
-        <div class="brand-name">IT Monitoring</div>
-        <div class="brand-sub">onboarding console</div>
+        <div class="brand-name" data-content-text="site.brandName">IT Monitoring</div>
+        <div class="brand-sub" data-content-text="site.brandSubtitle">onboarding console</div>
       </div>
     </a>
 
-    <nav class="side-nav">
-      <a href="index.html"><span class="nav-dot"></span>Overview</a>
-      <a href="access.html"><span class="nav-dot"></span>Access checklist</a>
-      <a href="systems.html" class="active"><span class="nav-dot"></span>Systems &amp; portals</a>
-    </nav>
+    <nav class="side-nav" data-navigation="sidebar"><a href="index.html"><span class="nav-dot"></span>Overview</a><a href="access.html"><span class="nav-dot"></span>Access checklist</a><a href="systems.html" class="active" aria-current="page"><span class="nav-dot"></span>Systems &amp; portals</a><a href="atm.html"><span class="nav-dot"></span>ATM Operations</a><a href="infrastructure.html"><span class="nav-dot"></span>Infrastructure</a></nav>
 
     <div class="side-foot">
       <div class="ring-widget">
@@ -42,13 +35,14 @@
           <circle class="ring-fill js-ring-fill" cx="22" cy="22" r="18"></circle>
         </svg>
         <div>
-          <div class="rw-label">Onboarding progress</div>
-          <div class="rw-value js-ring-value">0%</div>
+          <div class="rw-label" data-content-text="ui.progressLabel">Onboarding progress</div>
+          <div class="rw-value js-ring-value" data-content-text="ui.initialProgress">0%</div>
         </div>
       </div>
-      <div class="theme-toggle">
-        <button data-theme-btn="light">Day ops</button>
-        <button data-theme-btn="dark">Night ops</button>
+      <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en" lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+<div class="theme-toggle">
+        <button data-theme-btn="light" data-content-text="ui.themes.light">Day ops</button>
+        <button data-theme-btn="dark" data-content-text="ui.themes.dark">Night ops</button>
       </div>
     </div>
   </aside>
@@ -58,123 +52,131 @@
 
       <section style="margin-top:0;">
         <div class="section-head">
-          <h2 style="font-size:26px;">Systems &amp; portals</h2>
-          <p>Quick links to every login — a directory, not a second checklist. Track completion on the Access checklist page.</p>
+          <h2 style="font-size:26px;" data-content-text="systemsPage.heading">Systems &amp; portals</h2>
+          <p data-content-text="systemsPage.description">Quick links to every login — a directory, not a second checklist. Track completion on the Access checklist page.</p>
         </div>
 
         <div class="search-wrap">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          <input type="text" id="searchInput" placeholder="Search systems…">
+          <input type="text" id="searchInput" placeholder="Search systems…" data-content-attrs="{&quot;placeholder&quot;:&quot;systemsPage.searchPlaceholder&quot;}">
         </div>
 
         <div class="sys-grid" id="sysGrid">
 
-          <div class="sys-card" data-search-row="power card digital team">
-            <h4>Power Card</h4>
-            <div class="team">IT Digital Team</div>
-            <a class="sys-link" href="https://10.99.32.66:9444/PowerCardv35/#/login" target="_blank" rel="noopener noreferrer">Open Power Card 3.5 <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="power card digital team" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.power_card.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.power_card.name">Power Card</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.power_card.description">Including transaction follow-up, issue identification, and coordinating with the relevant teams to ensure smooth ATM operations.</p>
+            </details>
+            <div class="team" data-content-text="systems.power_card.team">IT Digital Team</div>
+            <a class="sys-link" href="https://10.99.32.66:9444/PowerCardv35/#/login" target="_blank" rel="noopener noreferrer" data-content-text="systems.power_card.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.power_card.link.href&quot;}">Open Power Card <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="aptra atm monitoring">
-            <h4>Aptra</h4>
-            <div class="team">ATM monitoring</div>
-            <a class="sys-link" href="https://headq-aptraap-p.awb.local/cxp-core-webapp/login" target="_blank" rel="noopener noreferrer">Open Aptra <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="aptra atm monitoring" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.aptra.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.aptra.name">Aptra</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.aptra.description">Used to monitor ATM issues, availability, and device status, helping identify faults and coordinate follow-up with the relevant teams to restore service.</p>
+            </details>
+            <div class="team" data-content-text="systems.aptra.team">ATM monitoring</div>
+            <a class="sys-link" href="https://headq-aptraap-p.awb.local/cxp-core-webapp/login" target="_blank" rel="noopener noreferrer" data-content-text="systems.aptra.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.aptra.link.href&quot;}">Open Aptra <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="ca service desk ticketing itsm">
-            <h4>CA Service Desk</h4>
-            <div class="team">Ticketing · ITSM Team</div>
-            <a class="sys-link" href="https://mynbkservices:8443/CAisd/servicedesk" target="_blank" rel="noopener noreferrer">Open CA Service Desk <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="ca service desk ticketing itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.ca_service_desk.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.ca_service_desk.name">CA Service Desk</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.ca_service_desk.description">Records and tracks IT incidents and service requests, assigns them to the responsible teams, and follows progress through resolution.</p>
+            </details>
+            <div class="team" data-content-text="systems.ca_service_desk.team">Ticketing · ITSM Team</div>
+            <a class="sys-link" href="https://mynbkservices:8443/CAisd/servicedesk" target="_blank" rel="noopener noreferrer" data-content-text="systems.ca_service_desk.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.ca_service_desk.link.href&quot;}">Open CA Service Desk <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="grafana dashboards itsm">
-            <h4>Grafana</h4>
-            <div class="team">Dashboards · ITSM Team</div>
-            <a class="sys-link" href="https://itdashboards/login" target="_blank" rel="noopener noreferrer">Open Grafana <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="grafana dashboards itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.grafana.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.grafana.name">Grafana</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.grafana.description">Displays monitoring dashboards and metrics to help follow service health, spot unusual behavior, and investigate operational issues.</p>
+            </details>
+            <div class="team" data-content-text="systems.grafana.team">Dashboards · ITSM Team</div>
+            <a class="sys-link" href="https://itdashboards/login" target="_blank" rel="noopener noreferrer" data-content-text="systems.grafana.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.grafana.link.href&quot;}">Open Grafana <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="t24 application owner">
-            <h4>T24</h4>
-            <div class="team">Core banking · Application Owner</div>
-            <a class="sys-link" href="https://t24production/Browser/Logoff" target="_blank" rel="noopener noreferrer">Open T24 <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="t24 application owner" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.t24.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.t24.name">T24</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.t24.description">Supports core banking operations, including customer accounts and banking transactions, and helps investigate related application issues.</p>
+            </details>
+            <div class="team" data-content-text="systems.t24.team">Core banking · Application Owner</div>
+            <a class="sys-link" href="https://t24production/Browser/Logoff" target="_blank" rel="noopener noreferrer" data-content-text="systems.t24.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.t24.link.href&quot;}">Open T24 <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="solid core digital team">
-            <h4>Solid Core</h4>
-            <div class="team">ATM security · Digital Team</div>
-            <a class="sys-link" href="https://headq-solidap-p:8443/core/orionNavigationLogin.do" target="_blank" rel="noopener noreferrer">Open Solid Core <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="solid core digital team" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.solid_core.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.solid_core.name">Solid Core</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.solid_core.description">Supports ATM security by controlling authorized software and monitoring changes to help protect devices from unauthorized activity.</p>
+            </details>
+            <div class="team" data-content-text="systems.solid_core.team">ATM security · Digital Team</div>
+            <a class="sys-link" href="https://headq-solidap-p:8443/core/orionNavigationLogin.do" target="_blank" rel="noopener noreferrer" data-content-text="systems.solid_core.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.solid_core.link.href&quot;}">Open Solid Core <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="ncr hde device estate">
-            <h4>NCR HDE</h4>
-            <div class="team">ATM device estate</div>
-            <a class="sys-link" href="https://headq-hdesdw-p/Account/LogOn" target="_blank" rel="noopener noreferrer">Open NCR HDE <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="ncr hde device estate" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.ncr_hde.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.ncr_hde.name">NCR HDE</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.ncr_hde.description">Provides visibility into the NCR ATM device estate to support device status follow-up and coordination of maintenance issues.</p>
+            </details>
+            <div class="team" data-content-text="systems.ncr_hde.team">ATM device estate</div>
+            <a class="sys-link" href="https://headq-hdesdw-p/Account/LogOn" target="_blank" rel="noopener noreferrer" data-content-text="systems.ncr_hde.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.ncr_hde.link.href&quot;}">Open NCR HDE <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="sap employee self service hr">
-            <h4>SAP Self‑Service</h4>
-            <div class="team">HR</div>
-            <a class="sys-link" href="https://headq-hrap-p.awb.local:44330/sap/bc/ui5_ui5/sap/ARSRVC_SUITE_PB/main.html" target="_blank" rel="noopener noreferrer">Open SAP ESS <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="sap employee self service hr" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.sap_self_service.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.sap_self_service.name">SAP Self‑Service</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.sap_self_service.description">Provides employee self-service access to HR information and requests, such as personal details and leave requests, according to assigned permissions.</p>
+            </details>
+            <div class="team" data-content-text="systems.sap_self_service.team">HR</div>
+            <a class="sys-link" href="https://headq-hrap-p.awb.local:44330/sap/bc/ui5_ui5/sap/ARSRVC_SUITE_PB/main.html" target="_blank" rel="noopener noreferrer" data-content-text="systems.sap_self_service.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.sap_self_service.link.href&quot;}">Open SAP ESS <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="spectrum netops itsm">
-            <h4>Spectrum</h4>
-            <div class="team">Network monitoring · ITSM Team</div>
-            <a class="sys-link" href="https://caspectrum/spectrum/" target="_blank" rel="noopener noreferrer">Open Spectrum <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="spectrum netops itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.spectrum.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.spectrum.name">Spectrum</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.spectrum.description">Monitors network devices and connectivity, raises fault alarms, and helps identify affected infrastructure for escalation and recovery.</p>
+            </details>
+            <div class="team" data-content-text="systems.spectrum.team">Network monitoring · ITSM Team</div>
+            <a class="sys-link" href="https://caspectrum/spectrum/" target="_blank" rel="noopener noreferrer" data-content-text="systems.spectrum.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.spectrum.link.href&quot;}">Open Spectrum <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="performance center netops itsm">
-            <h4>Performance Center</h4>
-            <div class="team">Network monitoring · ITSM Team</div>
-            <a class="sys-link" href="https://capc:8382/sso/sign-in.jsp" target="_blank" rel="noopener noreferrer">Open Performance Center <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="performance center netops itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.performance_center.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.performance_center.name">Performance Center</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.performance_center.description">Tracks network performance metrics, such as utilization and response times, to identify bottlenecks and investigate service degradation.</p>
+            </details>
+            <div class="team" data-content-text="systems.performance_center.team">Network monitoring · ITSM Team</div>
+            <a class="sys-link" href="https://capc:8382/sso/sign-in.jsp" target="_blank" rel="noopener noreferrer" data-content-text="systems.performance_center.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.performance_center.link.href&quot;}">Open Performance Center <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-          <div class="sys-card" data-search-row="uim infrastructure monitoring itsm">
-            <h4>UIM</h4>
-            <div class="team">Infrastructure monitoring · ITSM Team</div>
-            <a class="sys-link" href="https://uimportal/operatorconsole_portlet/standalone_login.jsp" target="_blank" rel="noopener noreferrer">Open UIM <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="sys-card" data-search-row="uim infrastructure monitoring itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;systems.uim.searchKeywords&quot;}">
+            <details class="sys-details">
+              <summary><h4 data-content-text="systems.uim.name">UIM</h4><svg class="sys-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p class="sys-description" data-content-text="systems.uim.description">Monitors infrastructure health and availability, including servers and resource usage, and provides alerts for operational follow-up.</p>
+            </details>
+            <div class="team" data-content-text="systems.uim.team">Infrastructure monitoring · ITSM Team</div>
+            <a class="sys-link" href="https://uimportal/operatorconsole_portlet/standalone_login.jsp" target="_blank" rel="noopener noreferrer" data-content-text="systems.uim.link.label" data-content-attrs="{&quot;href&quot;:&quot;systems.uim.link.href&quot;}">Open UIM <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
 
-        </div>
-      </section>
-
-      <section>
-        <div class="section-head">
-          <h2>Frequently asked</h2>
-        </div>
-        <div class="panel" style="padding: 6px 20px;">
-          <div class="faq-item open">
-            <button class="faq-q">How do I create an ATM incident?<span class="plus"></span></button>
-            <div class="faq-a"><p>Log it through CA Service Desk — that's the ticketing system of record for ATM and IT incidents.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">When should I send an outage email?<span class="plus"></span></button>
-            <div class="faq-a"><p>Any time a major service interruption is affecting customers or internal users — send it as soon as the issue is confirmed.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Who owns Power Card?<span class="plus"></span></button>
-            <div class="faq-a"><p>IT Digital Payment Team owns Power Card and grants the monitor privilege for it.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Who manages the dashboards?<span class="plus"></span></button>
-            <div class="faq-a"><p>The ITSM Team owns Grafana and the other monitoring dashboards.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Who do I contact for an ATM site issue?<span class="plus"></span></button>
-            <div class="faq-a"><p>ATM Optimization — they coordinate installs, removals and landlord permissions for site access.</p></div>
-          </div>
         </div>
       </section>
 
       <div class="page-foot">
-        <span>NBK Egypt — IT Enterprise Monitoring</span>
-        <span>Internal onboarding reference · not for external distribution</span>
+        <span data-content-text="site.footer.organization">NBK Egypt — IT Enterprise Monitoring</span>
+        <span data-content-text="site.footer.notice">Internal onboarding reference · not for external distribution</span>
       </div>
 
     </div>
   </main>
 </div>
 
+<script src="js/content.js"></script>
+<script src="js/content.ar.js"></script>
+<script src="js/language.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

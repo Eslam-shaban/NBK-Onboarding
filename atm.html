@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-content-text="atm.pageTitle">ATM Operations · NBK-E Monitoring Onboarding</title>
+<link rel="stylesheet" href="css/style.css" data-content-attrs="{&quot;href&quot;:&quot;assets.stylesheet&quot;}">
+</head>
+<body data-page="atm.html">
+
+<div class="mobile-top">
+  <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}"><div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt" data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}"></div></a>
+  <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en" lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+  <nav class="mobile-nav" data-navigation="mobile"><a href="atm.html" class="active" aria-current="page">ATM</a></nav>
+</div>
+
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+      <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt" data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}"></div>
+      <div><div class="brand-name" data-content-text="site.brandName">IT Monitoring</div><div class="brand-sub" data-content-text="site.brandSubtitle">onboarding console</div></div>
+    </a>
+    <nav class="side-nav" data-navigation="sidebar"><a href="atm.html" class="active" aria-current="page"><span class="nav-dot"></span>ATM Operations</a></nav>
+    <div class="side-foot">
+      <div class="ring-widget"><svg viewBox="0 0 44 44"><circle class="ring-track" cx="22" cy="22" r="18"></circle><circle class="ring-fill js-ring-fill" cx="22" cy="22" r="18"></circle></svg><div><div class="rw-label" data-content-text="ui.progressLabel">Onboarding progress</div><div class="rw-value js-ring-value" data-content-text="ui.initialProgress">0%</div></div></div>
+      <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en" lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+      <div class="theme-toggle"><button data-theme-btn="light" data-content-text="ui.themes.light">Day ops</button><button data-theme-btn="dark" data-content-text="ui.themes.dark">Night ops</button></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="page">
+      <section style="margin-top:0">
+        <div class="section-head"><h1 data-content-text="atm.heading">ATM Operations</h1><p data-content-text="atm.description">A reference for following ATM faults, understanding their impact and knowing which support contact to use.</p></div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2 data-content-text="atm.vendors.heading">Support vendors</h2></div>
+        <div id="atmVendors"></div>
+      </section>
+
+      
+
+      <section>
+        <div class="section-head"><h2 data-content-text="atm.overview.heading">ATM Types</h2></div>
+        <div id="atmOverview"></div>
+      </section>
+
+      <section>
+        <div class="search-wrap"><input id="searchInput" type="search" placeholder="Search ATM issues, vendors and contacts…" aria-label="Search ATM issues, vendors and contacts…" data-content-attrs='{"placeholder":"atm.searchPlaceholder","aria-label":"atm.searchPlaceholder"}'></div>
+        <div class="section-head"><h2 data-content-text="atm.issues.heading">Issue reference</h2></div>
+        <div id="atmIssues"></div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2 data-content-text="atm.conditions.heading">Other monitoring conditions</h2></div>
+        <div id="atmConditions"></div>
+      </section>
+
+      <section>
+        <div class="section-head"><h2 data-content-text="atm.comms.heading">Communication contacts</h2></div>
+        <div id="atmComms"></div>
+      </section>
+
+      <div class="page-foot"><span data-content-text="site.footer.organization">NBK Egypt — IT Enterprise Monitoring</span><span data-content-text="site.footer.notice">Internal onboarding reference · not for external distribution</span></div>
+    </div>
+  </main>
+</div>
+
+<script src="js/content.js"></script>
+<script src="js/content.ar.js"></script>
+<script src="js/language.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

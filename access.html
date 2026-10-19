@@ -2,520 +2,454 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Access checklist · NBK-E Monitoring Onboarding</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-content-text="access.pageTitle">Access checklist · NBK-E Monitoring Onboarding</title>
+    <link rel="stylesheet" href="css/style.css" data-content-attrs="{&quot;href&quot;:&quot;assets.stylesheet&quot;}">
 </head>
 
-<body>
+<body data-page="access.html">
 
-  <div class="mobile-top">
-    <a class="brand" href="index.html">
-      <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"></div>
-    </a>
-    <nav class="mobile-nav">
-      <a href="index.html">Overview</a>
-      <a href="access.html" class="active">Access</a>
-      <a href="systems.html">Systems</a>
-    </nav>
-  </div>
+    <div class="mobile-top">
+        <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+            <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt" data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}"></div>
+        </a>
+        <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en" lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+        <nav class="mobile-nav" data-navigation="mobile"><a href="index.html">Overview</a><a href="access.html" class="active" aria-current="page">Access</a><a href="systems.html">Systems</a><a href="atm.html">ATM</a><a href="infrastructure.html">Infrastructure</a></nav>
+    </div>
 
-  <div class="shell">
-    <aside class="sidebar">
-      <a class="brand" href="index.html">
-        <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"></div>
-        <div>
-          <div class="brand-name">IT Monitoring</div>
-          <div class="brand-sub">onboarding console</div>
-        </div>
-      </a>
+    <div class="shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+                <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt" data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}"></div>
+                <div>
+                    <div class="brand-name" data-content-text="site.brandName">IT Monitoring</div>
+                    <div class="brand-sub" data-content-text="site.brandSubtitle">onboarding console</div>
+                </div>
+            </a>
 
-      <nav class="side-nav">
-        <a href="index.html"><span class="nav-dot"></span>Overview</a>
-        <a href="access.html" class="active"><span class="nav-dot"></span>Access checklist</a>
-        <a href="systems.html"><span class="nav-dot"></span>Systems &amp; portals</a>
-      </nav>
+            <nav class="side-nav" data-navigation="sidebar"><a href="index.html"><span class="nav-dot"></span>Overview</a><a href="access.html" class="active" aria-current="page"><span class="nav-dot"></span>Access checklist</a><a href="systems.html"><span class="nav-dot"></span>Systems &amp; portals</a>
+                <a href="atm.html"><span class="nav-dot"></span>ATM Operations</a><a href="infrastructure.html"><span class="nav-dot"></span>Infrastructure</a></nav>
 
-      <div class="side-foot">
-        <div class="ring-widget">
-          <svg viewBox="0 0 44 44">
+            <div class="side-foot">
+                <div class="ring-widget">
+                    <svg viewBox="0 0 44 44">
             <circle class="ring-track" cx="22" cy="22" r="18"></circle>
             <circle class="ring-fill js-ring-fill" cx="22" cy="22" r="18"></circle>
           </svg>
-          <div>
-            <div class="rw-label">Onboarding progress</div>
-            <div class="rw-value js-ring-value">0%</div>
-          </div>
-        </div>
-        <div class="theme-toggle">
-          <button data-theme-btn="light">Day ops</button>
-          <button data-theme-btn="dark">Night ops</button>
-        </div>
-      </div>
-    </aside>
-
-    <main class="main">
-      <div class="page">
-
-        <section style="margin-top:0;">
-          <div class="section-head">
-            <h2 style="font-size:26px;">Access checklist</h2>
-            <p>Everything in one list — tasks, forms and system access. Tick items off as you go; your progress is saved
-              on this device and reflected in the ring on every page.</p>
-          </div>
-
-          <div class="dash-row">
-            <div class="dash-card done">
-              <div class="dash-label">Completed</div>
-              <div class="dash-figure js-done-count">0</div>
+                    <div>
+                        <div class="rw-label" data-content-text="ui.progressLabel">Onboarding progress</div>
+                        <div class="rw-value js-ring-value" data-content-text="ui.initialProgress">0%</div>
+                    </div>
+                </div>
+                <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en" lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+                <div class="theme-toggle">
+                    <button data-theme-btn="light" data-content-text="ui.themes.light">Day ops</button>
+                    <button data-theme-btn="dark" data-content-text="ui.themes.dark">Night ops</button>
+                </div>
             </div>
-            <div class="dash-card pending">
-              <div class="dash-label">Pending</div>
-              <div class="dash-figure js-pending-count">0</div>
-            </div>
-            <div class="dash-card total">
-              <div class="dash-label">Total tracked</div>
-              <div class="dash-figure js-total-count">0</div>
-            </div>
-          </div>
-        </section>
+        </aside>
 
-        <section>
-          <div class="search-wrap">
-            <svg viewBox="0 0 24 24" fill="none">
+        <main class="main">
+            <div class="page">
+
+                <section style="margin-top:0;">
+                    <div class="section-head">
+                        <h2 style="font-size:26px;" data-content-text="access.heading">Access checklist</h2>
+                        <p data-content-text="access.description">Everything in one list — tasks, forms and system access. Tick items off as you go; your progress is saved on this device and reflected in the ring on every page.</p>
+                    </div>
+
+                    <div class="dash-row">
+                        <div class="dash-card done">
+                            <div class="dash-label" data-content-text="access.stats.completed">Completed</div>
+                            <div class="dash-figure js-done-count" data-content-text="ui.initialCount">0</div>
+                        </div>
+                        <div class="dash-card pending">
+                            <div class="dash-label" data-content-text="access.stats.pending">Pending</div>
+                            <div class="dash-figure js-pending-count" data-content-text="ui.initialCount">0</div>
+                        </div>
+                        <div class="dash-card total">
+                            <div class="dash-label" data-content-text="access.stats.total">Total tracked</div>
+                            <div class="dash-figure js-total-count" data-content-text="ui.initialCount">0</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="search-wrap">
+                        <svg viewBox="0 0 24 24" fill="none">
               <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
               <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
             </svg>
-            <input type="text" id="searchInput" placeholder="Search the checklist…">
-          </div>
+                        <input type="text" id="searchInput" placeholder="Search the checklist…" data-content-attrs="{&quot;placeholder&quot;:&quot;access.searchPlaceholder&quot;}">
+                    </div>
 
-          <div class="panel checklist">
+                    <div class="panel checklist">
+                        <div class="checklist-group-label" data-content-text="access.groups.access">Access requests</div>
 
-            <div class="checklist-group-label">Core tasks</div>
-
-            <div class="check-row" data-search-row="read atm procedures">
-              <input type="checkbox" id="c1" data-track-id="task-read-procedures">
-              <label for="c1">
+                        <div class="check-row" data-search-row="sap employee self service hr authorization" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-sap.searchKeywords&quot;}">
+                            <input type="checkbox" id="a22" data-track-id="access-sap">
+                            <label for="a22">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="c1" class="chk-main"><span class="chk-text"><span class="chk-title">Read ATM
-                    procedures</span></span></label>
-            </div>
-
-            <div class="check-row" data-search-row="create close atm incidents ca">
-              <input type="checkbox" id="c2" data-track-id="task-atm-incidents-ca">
-              <label for="c2">
-                <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></div>
-              </label>
-              <label for="c2" class="chk-main"><span class="chk-text"><span class="chk-title">Create &amp; close ATM
-                    incidents on CA</span></span></label>
-            </div>
-
-            <div class="check-row" data-search-row="create close it incidents">
-              <input type="checkbox" id="c3" data-track-id="task-it-incidents">
-              <label for="c3">
-                <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></div>
-              </label>
-              <label for="c3" class="chk-main"><span class="chk-text"><span class="chk-title">Create &amp; close IT
-                    incidents</span></span></label>
-            </div>
-
-
-            <div class="check-row" data-search-row="send outage notification email">
-              <input type="checkbox" id="c4" data-track-id="task-outage-email">
-              <label for="c4">
-                <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></div>
-              </label>
-              <label for="c4" class="chk-main"><span class="chk-text"><span class="chk-title">Send outage notification
-                    emails</span></span></label>
-            </div>
-
-            <div class="checklist-group-label">Access requests</div>
-
-            <div class="check-row" data-search-row="sap employee self service hr authorization">
-              <input type="checkbox" id="a22" data-track-id="access-sap">
-              <label for="a22">
-                <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></div>
-              </label>
-              <label for="a22" class="chk-main">
-                <span class="chk-text"><span class="chk-title">SAP Self‑Service</span><span class="chk-note">HR · needs
+                            <label for="a22" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-sap.title">SAP Self‑Service</span><span class="chk-note" data-content-text="access.items.access-sap.note">HR · needs
                     authorization</span></span>
               </label>
-              <a class="chk-link"
-                href="https://headq-hrap-p.awb.local:44330/sap/bc/ui5_ui5/sap/ARSRVC_SUITE_PB/main.html" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://headq-hrap-p.awb.local:44330/sap/bc/ui5_ui5/sap/ARSRVC_SUITE_PB/main.html" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-sap.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.sap_self_service.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="aptra atm monitoring">
-              <input type="checkbox" id="a11" data-track-id="access-aptra">
-              <label for="a11">
+                        <div class="check-row" data-search-row="aptra atm monitoring" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-aptra.searchKeywords&quot;}">
+                            <input type="checkbox" id="a11" data-track-id="access-aptra">
+                            <label for="a11">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a11" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Aptra</span><span class="chk-note">ATM
+                            <label for="a11" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-aptra.title">Aptra</span><span class="chk-note" data-content-text="access.items.access-aptra.note">ATM
                     monitoring</span></span>
               </label>
-              <a class="chk-link" href="https://headq-aptraap-p.awb.local/cxp-core-webapp/login" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://headq-aptraap-p.awb.local/cxp-core-webapp/login" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-aptra.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.aptra.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="power card powercard user form digital payment digital team">
-              <input type="checkbox" id="a1" data-track-id="access-powercard">
-              <label for="a1">
+                        <div class="check-row" data-search-row="power card powercard user form digital payment digital team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-powercard.searchKeywords&quot;}">
+                            <input type="checkbox" id="a1" data-track-id="access-powercard">
+                            <label for="a1">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a1" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Power Card</span><span class="chk-note">Power Card User
+                            <label for="a1" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-powercard.title">Power Card</span><span class="chk-note" data-content-text="access.items.access-powercard.note">Power Card User
                     Form · monitor privilege via IT Digital Team</span></span>
               </label>
-              <a class="chk-link" href="https://10.99.32.66:9444/PowerCardv35/#/login" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://10.99.32.66:9444/PowerCardv35/#/login" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-powercard.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.power_card.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="external mail access form it admin outside nbk-e">
-              <input type="checkbox" id="a10" data-track-id="access-externalmail">
-              <label for="a10">
+                        <div class="check-row" data-search-row="external mail access form it admin outside nbk-e" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-externalmail.searchKeywords&quot;}">
+                            <input type="checkbox" id="a10" data-track-id="access-externalmail">
+                            <label for="a10">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a10" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Outlook: External mail</span><span class="chk-note">Send
+                            <label for="a10" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-externalmail.title">Outlook: External mail</span><span class="chk-note" data-content-text="access.items.access-externalmail.note">Send
                     mail outside NBK‑E -
                     External Mail Access Form · IT Admin</span></span>
               </label>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="dashboards grafana itsm team">
-              <input type="checkbox" id="a17" data-track-id="access-dashboards">
-              <label for="a17">
+                        <div class="check-row" data-search-row="dashboards grafana itsm team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-dashboards.searchKeywords&quot;}">
+                            <input type="checkbox" id="a17" data-track-id="access-dashboards">
+                            <label for="a17">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a17" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Dashboards — Grafana</span><span
-                    class="chk-note">Executed by ITSM Team</span></span>
+                            <label for="a17" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-dashboards.title">Dashboards — Grafana</span><span
+                    class="chk-note" data-content-text="access.items.access-dashboards.note">Executed by ITSM Team</span></span>
               </label>
-              <a class="chk-link" href="https://itdashboards/login" target="_blank" rel="noopener noreferrer">Open <svg
+                            <a class="chk-link" href="https://itdashboards/login" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-dashboards.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.grafana.link.href&quot;}">Open <svg
                   viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="ca service desk management access form itsm ticketing">
-              <input type="checkbox" id="a4" data-track-id="access-ca">
-              <label for="a4">
+                        <div class="check-row" data-search-row="ca service desk management access form itsm ticketing" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-ca.searchKeywords&quot;}">
+                            <input type="checkbox" id="a4" data-track-id="access-ca">
+                            <label for="a4">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a4" class="chk-main">
-                <span class="chk-text"><span class="chk-title">CA Service Desk</span><span class="chk-note">CA Service
+                            <label for="a4" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-ca.title">CA Service Desk</span><span class="chk-note" data-content-text="access.items.access-ca.note">CA Service
                     Management Access Form · ITSM Team</span></span>
               </label>
-              <a class="chk-link" href="https://mynbkservices:8443/CAisd/servicedesk" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://mynbkservices:8443/CAisd/servicedesk" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-ca.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.ca_service_desk.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
-            <div class="check-row" data-search-row="ca spectrum infrastructure monitoring access form itsm">
-              <input type="checkbox" id="a9" data-track-id="access-spectrum">
-              <label for="a9">
+                        </div>
+                        <div class="check-row" data-search-row="ca spectrum infrastructure monitoring access form itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-spectrum.searchKeywords&quot;}">
+                            <input type="checkbox" id="a9" data-track-id="access-spectrum">
+                            <label for="a9">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a9" class="chk-main">
-                <span class="chk-text"><span class="chk-title">CA Spectrum</span><span class="chk-note">CA
+                            <label for="a9" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-spectrum.title">CA Spectrum</span><span class="chk-note" data-content-text="access.items.access-spectrum.note">CA
                     Infrastructure Monitoring Access Form · ITSM Team</span></span>
               </label>
-              <a class="chk-link" href="https://caspectrum/spectrum/" target="_blank" rel="noopener noreferrer">Open
+                            <a class="chk-link" href="https://caspectrum/spectrum/" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-spectrum.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.spectrum.link.href&quot;}">Open
                 <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="ca performance center infrastructure monitoring access form itsm">
-              <input type="checkbox" id="a8" data-track-id="access-perfcenter">
-              <label for="a8">
+                        <div class="check-row" data-search-row="ca performance center infrastructure monitoring access form itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-perfcenter.searchKeywords&quot;}">
+                            <input type="checkbox" id="a8" data-track-id="access-perfcenter">
+                            <label for="a8">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a8" class="chk-main">
-                <span class="chk-text"><span class="chk-title">CA Performance Center</span><span class="chk-note">CA
+                            <label for="a8" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-perfcenter.title">CA Performance Center</span><span class="chk-note" data-content-text="access.items.access-perfcenter.note">CA
                     Infrastructure Monitoring Access Form · ITSM Team</span></span>
               </label>
-              <a class="chk-link" href="https://capc:8382/sso/sign-in.jsp" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://capc:8382/sso/sign-in.jsp" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-perfcenter.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.performance_center.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="uim infrastructure monitoring access form itsm">
-              <input type="checkbox" id="a7" data-track-id="access-uim">
-              <label for="a7">
+                        <div class="check-row" data-search-row="uim infrastructure monitoring access form itsm" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-uim.searchKeywords&quot;}">
+                            <input type="checkbox" id="a7" data-track-id="access-uim">
+                            <label for="a7">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a7" class="chk-main">
-                <span class="chk-text"><span class="chk-title">UIM</span><span class="chk-note">CA Infrastructure
+                            <label for="a7" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-uim.title">UIM</span><span class="chk-note" data-content-text="access.items.access-uim.note">CA Infrastructure
                     Monitoring Access Form · ITSM Team</span></span>
               </label>
-              <a class="chk-link" href="https://uimportal/operatorconsole_portlet/standalone_login.jsp" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://uimportal/operatorconsole_portlet/standalone_login.jsp" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-uim.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.uim.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="t24 access form application owner authorization">
-              <input type="checkbox" id="a2" data-track-id="access-t24">
-              <label for="a2">
+                        <div class="check-row" data-search-row="t24 access form application owner authorization" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-t24.searchKeywords&quot;}">
+                            <input type="checkbox" id="a2" data-track-id="access-t24">
+                            <label for="a2">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a2" class="chk-main">
-                <span class="chk-text"><span class="chk-title">T24</span><span class="chk-note">T24 Access Form ·
+                            <label for="a2" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-t24.title">T24</span><span class="chk-note" data-content-text="access.items.access-t24.note">T24 Access Form ·
                     Application Owner · needs authorization</span></span>
               </label>
-              <a class="chk-link" href="https://t24production/Browser/Logoff" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://t24production/Browser/Logoff" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-t24.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.t24.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="vynamic view monitor atm form help desk team">
-              <input type="checkbox" id="a12" data-track-id="access-vynamic">
-              <label for="a12">
+                        <div class="check-row" data-search-row="vynamic application web portal view monitor atm form help desk team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-vynamic.searchKeywords&quot;}">
+                            <input type="checkbox" id="a12" data-track-id="access-vynamic">
+                            <label for="a12">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a12" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Vynamic</span><span class="chk-note">Vynamic View Monitor
-                    ATM Form · executed by Help Desk Team</span></span>
+                            <label for="a12" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-vynamic.title">Vynamic</span><span class="chk-note" data-content-text="access.items.access-vynamic.note">Application and web portal · Vynamic View Monitor ATM Form · executed by Help Desk Team</span></span>
               </label>
-            </div>
+                            <a class="chk-link" href="https://headq-vymap-p.awb.local:8443/webconsole/login.xhtml" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-vynamic.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;access.items.access-vynamic.linkHref&quot;}">Open portal <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                        </div>
 
 
 
-            <div class="check-row" data-search-row="active directory monitor privilege help desk team">
-              <input type="checkbox" id="a14" data-track-id="access-ad">
-              <label for="a14">
+                        <div class="check-row" data-search-row="active directory monitor privilege help desk team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-ad.searchKeywords&quot;}">
+                            <input type="checkbox" id="a14" data-track-id="access-ad">
+                            <label for="a14">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a14" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Active Directory</span><span class="chk-note">IT monitor
+                            <label for="a14" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-ad.title">Active Directory</span><span class="chk-note" data-content-text="access.items.access-ad.note">IT monitor
                     privilege · executed by Help Desk Team</span></span>
               </label>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="solid core solidcore ncr atm security digital team authorization">
-              <input type="checkbox" id="a3" data-track-id="access-solidcore">
-              <label for="a3">
+                        <div class="check-row" data-search-row="release mail email notification deployment change" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-release-mail.searchKeywords&quot;}">
+                            <input type="checkbox" id="a23" data-track-id="access-release-mail">
+                            <label for="a23"><div class="chk-box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg></div></label>
+                            <label for="a23" class="chk-main"><span class="chk-text"><span class="chk-title" data-content-text="access.items.access-release-mail.title">Release mail</span><span class="chk-note" data-content-text="access.items.access-release-mail.note">Receive release emails needed for operational follow-up</span></span></label>
+                        </div>
+
+                        <div class="check-row" data-search-row="solid core solidcore ncr atm security digital team authorization" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-solidcore.searchKeywords&quot;}">
+                            <input type="checkbox" id="a3" data-track-id="access-solidcore">
+                            <label for="a3">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a3" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Solid Core</span><span class="chk-note">NCR ATM Security
+                            <label for="a3" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-solidcore.title">Solid Core</span><span class="chk-note" data-content-text="access.items.access-solidcore.note">NCR ATM Security
                     SolidCore Form · Digital Team · needs authorization</span></span>
               </label>
-              <a class="chk-link" href="https://headq-solidap-p:8443/core/orionNavigationLogin.do" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://headq-solidap-p:8443/core/orionNavigationLogin.do" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-solidcore.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.solid_core.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="ncr hde atm device estate authorization">
-              <input type="checkbox" id="a21" data-track-id="access-ncrhde">
-              <label for="a21">
+                        <div class="check-row" data-search-row="ncr hde atm device estate authorization" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-ncrhde.searchKeywords&quot;}">
+                            <input type="checkbox" id="a21" data-track-id="access-ncrhde">
+                            <label for="a21">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a21" class="chk-main">
-                <span class="chk-text"><span class="chk-title">NCR HDE</span><span class="chk-note">ATM device estate ·
+                            <label for="a21" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-ncrhde.title">NCR HDE</span><span class="chk-note" data-content-text="access.items.access-ncrhde.note">ATM device estate ·
                     needs authorization</span></span>
               </label>
-              <a class="chk-link" href="https://headq-hdesdw-p/Account/LogOn" target="_blank"
-                rel="noopener noreferrer">Open <svg viewBox="0 0 24 24" fill="none">
+                            <a class="chk-link" href="https://headq-hdesdw-p/Account/LogOn" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-ncrhde.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;systems.ncr_hde.link.href&quot;}">Open <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg></a>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="forex atm ncr forex form application team">
-              <input type="checkbox" id="a6" data-track-id="access-forex">
-              <label for="a6">
+                        <div class="check-row" data-search-row="forex atm ncr forex form application team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-forex.searchKeywords&quot;}">
+                            <input type="checkbox" id="a6" data-track-id="access-forex">
+                            <label for="a6">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a6" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Forex</span><span class="chk-note">ATM NCR Forex Form ·
+                            <label for="a6" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-forex.title">Forex</span><span class="chk-note" data-content-text="access.items.access-forex.note">ATM NCR Forex Form ·
                     needs authorization</span></span>
               </label>
-            </div>
+                            <a class="chk-link" href="https://10.99.1.200/FFMS_V2/MainPages/Login.aspx" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-forex.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;access.items.access-forex.linkHref&quot;}">Open <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                        </div>
 
-            <div class="check-row" data-search-row="nexthink access form itsm privilege">
-              <input type="checkbox" id="a5" data-track-id="access-nexthink">
-              <label for="a5">
+                        <div class="check-row" data-search-row="wallet access digital payment" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-wallet.searchKeywords&quot;}">
+                            <input type="checkbox" id="a24" data-track-id="access-wallet">
+                            <label for="a24"><div class="chk-box"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg></div></label>
+                            <label for="a24" class="chk-main"><span class="chk-text"><span class="chk-title" data-content-text="access.items.access-wallet.title">Wallet</span><span class="chk-note" data-content-text="access.items.access-wallet.note">Wallet access needed for work activities</span></span></label>
+                            <a class="chk-link" href="https://headq-fncrap-p.awb.local/portal/MainPages/0000_Login.aspx" target="_blank" rel="noopener noreferrer" data-content-text="access.items.access-wallet.linkLabel" data-content-attrs="{&quot;href&quot;:&quot;access.items.access-wallet.linkHref&quot;}">Open <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+                        </div>
+
+                        <div class="check-row" data-search-row="nexthink access form itsm privilege" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-nexthink.searchKeywords&quot;}">
+                            <input type="checkbox" id="a5" data-track-id="access-nexthink">
+                            <label for="a5">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a5" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Nexthink</span><span class="chk-note">Nexthink Access
+                            <label for="a5" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-nexthink.title">Nexthink</span><span class="chk-note" data-content-text="access.items.access-nexthink.note">Nexthink Access
                     Form · requested privilege: ITSM</span></span>
               </label>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="webex help desk team">
-              <input type="checkbox" id="a15" data-track-id="access-webex">
-              <label for="a15">
+                        <div class="check-row" data-search-row="webex help desk team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-webex.searchKeywords&quot;}">
+                            <input type="checkbox" id="a15" data-track-id="access-webex">
+                            <label for="a15">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a15" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Webex</span><span class="chk-note">Executed by Help Desk
+                            <label for="a15" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-webex.title">Webex</span><span class="chk-note" data-content-text="access.items.access-webex.note">Executed by Help Desk
                     Team</span></span>
               </label>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="microsoft teams help desk team">
-              <input type="checkbox" id="a16" data-track-id="access-teams">
-              <label for="a16">
+                        <div class="check-row" data-search-row="microsoft teams help desk team" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-teams.searchKeywords&quot;}">
+                            <input type="checkbox" id="a16" data-track-id="access-teams">
+                            <label for="a16">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a16" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Microsoft Teams</span><span class="chk-note">Executed by
+                            <label for="a16" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-teams.title">Microsoft Teams</span><span class="chk-note" data-content-text="access.items.access-teams.note">Executed by
                     Help Desk Team</span></span>
               </label>
-            </div>
+                        </div>
 
 
 
-            <div class="check-row" data-search-row="internet banking self service call center">
-              <input type="checkbox" id="a18" data-track-id="access-ibanking">
-              <label for="a18">
+                        <div class="check-row" data-search-row="mobile banking" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-obanking.searchKeywords&quot;}">
+                            <input type="checkbox" id="a19" data-track-id="access-obanking">
+                            <label for="a19">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a18" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Internet Banking</span><span
-                    class="chk-note">Self‑service · executed by Call Center</span></span>
+                            <label for="a19" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-obanking.title">Mobile banking</span></span>
               </label>
-            </div>
+                        </div>
 
-            <div class="check-row" data-search-row="online banking self service call center">
-              <input type="checkbox" id="a19" data-track-id="access-obanking">
-              <label for="a19">
+                        <div class="check-row" data-search-row="ivr apply online banking call center" data-content-attrs="{&quot;data-search-row&quot;:&quot;access.items.access-ivr.searchKeywords&quot;}">
+                            <input type="checkbox" id="a20" data-track-id="access-ivr">
+                            <label for="a20">
                 <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
                     <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg></div>
               </label>
-              <label for="a19" class="chk-main">
-                <span class="chk-text"><span class="chk-title">Online Banking</span><span class="chk-note">Self‑service
+                            <label for="a20" class="chk-main">
+                <span class="chk-text"><span class="chk-title" data-content-text="access.items.access-ivr.title">IVR</span><span class="chk-note" data-content-text="access.items.access-ivr.note">Apply via Online Banking
                     · executed by Call Center</span></span>
               </label>
+                        </div>
+
+
+
+
+
+                    </div>
+                </section>
+
+                <div class="page-foot">
+                    <span data-content-text="site.footer.organization">NBK Egypt — IT Enterprise Monitoring</span>
+                    <span data-content-text="site.footer.notice">Internal onboarding reference · not for external distribution</span>
+                </div>
+
             </div>
+        </main>
+    </div>
 
-            <div class="check-row" data-search-row="ivr apply online banking call center">
-              <input type="checkbox" id="a20" data-track-id="access-ivr">
-              <label for="a20">
-                <div class="chk-box"><svg viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg></div>
-              </label>
-              <label for="a20" class="chk-main">
-                <span class="chk-text"><span class="chk-title">IVR</span><span class="chk-note">Apply via Online Banking
-                    · executed by Call Center</span></span>
-              </label>
-            </div>
-
-
-
-
-
-          </div>
-        </section>
-
-        <div class="page-foot">
-          <span>NBK Egypt — IT Enterprise Monitoring</span>
-          <span>Internal onboarding reference · not for external distribution</span>
-        </div>
-
-      </div>
-    </main>
-  </div>
-
-  <script src="js/script.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/content.ar.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

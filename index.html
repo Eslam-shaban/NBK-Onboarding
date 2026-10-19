@@ -1,217 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Overview · NBK-E Monitoring Onboarding</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-content-text="overview.pageTitle">Overview · NBK-E Monitoring Onboarding</title>
+  <link rel="stylesheet" href="css/style.css" data-content-attrs="{&quot;href&quot;:&quot;assets.stylesheet&quot;}">
 </head>
-<body>
 
-<div class="mobile-top">
-  <a class="brand" href="index.html">
-    <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"></div>
+<body data-page="index.html">
+
+  <a class="overview-donut" href="access.html" aria-label="View access checklist and onboarding progress"
+    data-content-attrs="{&quot;aria-label&quot;:&quot;overview.progressLinkLabel&quot;}">
+    <svg viewBox="0 0 160 160" aria-hidden="true">
+      <circle class="ring-track" cx="80" cy="80" r="66"></circle>
+      <circle class="ring-fill js-ring-fill" cx="80" cy="80" r="66"></circle>
+    </svg>
+    <span class="overview-donut-value js-ring-value" data-content-text="ui.initialProgress">0%</span>
   </a>
-  <nav class="mobile-nav">
-    <a href="index.html" class="active">Overview</a>
-    <a href="access.html">Access</a>
-    <a href="systems.html">Systems</a>
-  </nav>
-</div>
 
-<div class="shell">
-  <aside class="sidebar">
-    <a class="brand" href="index.html">
-      <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"></div>
-      <div>
-        <div class="brand-name">IT Monitoring</div>
-        <div class="brand-sub">onboarding console</div>
+  <div class="mobile-top">
+    <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+      <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"
+          data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}">
       </div>
     </a>
+    <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en"
+        lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+    <nav class="mobile-nav" data-navigation="mobile"><a href="index.html" class="active"
+        aria-current="page">Overview</a><a href="access.html">Access</a><a href="systems.html">Systems</a><a
+        href="atm.html">ATM</a><a href="infrastructure.html">Infrastructure</a></nav>
+  </div>
 
-    <nav class="side-nav">
-      <a href="index.html" class="active"><span class="nav-dot"></span>Overview</a>
-      <a href="access.html"><span class="nav-dot"></span>Access checklist</a>
-      <a href="systems.html"><span class="nav-dot"></span>Systems &amp; portals</a>
-    </nav>
-
-    <div class="side-foot">
-      <div class="ring-widget">
-        <svg viewBox="0 0 44 44">
-          <circle class="ring-track" cx="22" cy="22" r="18"></circle>
-          <circle class="ring-fill js-ring-fill" cx="22" cy="22" r="18"></circle>
-        </svg>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html" data-content-attrs="{&quot;href&quot;:&quot;site.homeUrl&quot;}">
+        <div class="brand-mark"><img src="images/nbk-logo.png" alt="NBK Egypt"
+            data-content-attrs="{&quot;src&quot;:&quot;site.logo.src&quot;,&quot;alt&quot;:&quot;site.logo.alt&quot;}">
+        </div>
         <div>
-          <div class="rw-label">Onboarding progress</div>
-          <div class="rw-value js-ring-value">0%</div>
+          <div class="brand-name" data-content-text="site.brandName">IT Monitoring</div>
+          <div class="brand-sub" data-content-text="site.brandSubtitle">onboarding console</div>
+        </div>
+      </a>
+
+      <nav class="side-nav" data-navigation="sidebar"><a href="index.html" class="active" aria-current="page"><span
+            class="nav-dot"></span>Overview</a><a href="access.html"><span class="nav-dot"></span>Access checklist</a><a
+          href="systems.html"><span class="nav-dot"></span>Systems &amp; portals</a><a href="atm.html"><span
+            class="nav-dot"></span>ATM Operations</a><a href="infrastructure.html"><span
+            class="nav-dot"></span>Infrastructure</a></nav>
+
+      <div class="side-foot">
+        <div class="ring-widget">
+          <svg viewBox="0 0 44 44">
+            <circle class="ring-track" cx="22" cy="22" r="18"></circle>
+            <circle class="ring-fill js-ring-fill" cx="22" cy="22" r="18"></circle>
+          </svg>
+          <div>
+            <div class="rw-label" data-content-text="ui.progressLabel">Onboarding progress</div>
+            <div class="rw-value js-ring-value" data-content-text="ui.initialProgress">0%</div>
+          </div>
+        </div>
+        <div class="language-toggle" role="group" aria-label="Language / اللغة"><button type="button" data-language="en"
+            lang="en">English</button><button type="button" data-language="ar" lang="ar">العربية</button></div>
+        <div class="theme-toggle">
+          <button data-theme-btn="light" data-content-text="ui.themes.light">Day ops</button>
+          <button data-theme-btn="dark" data-content-text="ui.themes.dark">Night ops</button>
         </div>
       </div>
-      <div class="theme-toggle">
-        <button data-theme-btn="light">Day ops</button>
-        <button data-theme-btn="dark">Night ops</button>
-      </div>
-    </div>
-  </aside>
+    </aside>
 
-  <main class="main">
-    <div class="page">
+    <main class="main">
+      <div class="page">
 
-      <section class="hero">
-        <div class="grid-veil"></div>
-        <div class="hero-inner">
-          <div class="hero-kicker reveal d1"><span class="pulse-dot"></span>IT Enterprise Monitoring &amp; Process Automation</div>
-          <h1 class="reveal d2">Welcome to the watch floor.</h1>
-          <p class="hero-lede reveal d3">This is your onboarding console for the IT Enterprise Monitoring team at NBK Egypt — everything you need to get ATM, network and banking‑service monitoring access sorted, in one place.</p>
+        <section class="hero">
+          <div class="grid-veil"></div>
+          <div class="hero-inner">
+            <div class="hero-kicker reveal d1" data-content-text="overview.kicker"><span class="pulse-dot"></span>IT
+              Enterprise Monitoring &amp; Process Automation</div>
+            <h1 class="reveal d2" data-content-text="overview.heading">Welcome to the watch floor.</h1>
+            <p class="hero-lede reveal d3" data-content-text="overview.description">This is your onboarding console for
+              the IT Enterprise Monitoring team at NBK Egypt — everything you need to get ATM, network and
+              banking‑service monitoring access sorted, in one place.</p>
+          </div>
+        </section>
 
-          <div class="hero-stat-row reveal d4">
-            <div class="stat-card">
-              <svg viewBox="0 0 56 56" fill="none">
-                <circle class="ring-track" cx="28" cy="28" r="22" stroke-width="4"/>
-                <circle class="ring-fill js-ring-fill" cx="28" cy="28" r="22" stroke-width="4"/>
+        <section>
+          <div class="section-head">
+            <h2 data-content-text="overview.mission.heading">How the team works</h2>
+          </div>
+          <div class="panel team-intro-panel">
+            <p class="panel-lede" data-content-text="overview.mission.description">The day-to-day work is divided into
+              two connected tracks: Infrastructure and ATM Operations.</p>
+            <div class="workstream-heading">
+              <h3 data-content-text="overview.workstreams.heading">Two connected workstreams</h3>
+              <p data-content-text="overview.workstreams.description">Both tracks share the same goal: identify issues
+                early, communicate clearly and follow them through to resolution.</p>
+            </div>
+            <div class="workstream-grid">
+              <article class="workstream-card infrastructure-track">
+                <div class="workstream-label" data-content-text="overview.workstreams.infrastructure.label">01 ·
+                  Infrastructure</div>
+                <h3 data-content-text="overview.workstreams.infrastructure.title">Monitor the IT estate</h3>
+                <p data-content-text="overview.workstreams.infrastructure.description">Focus on the health of the IT
+                  environment and the response to service-impacting issues.</p>
+                <ul class="workstream-list">
+                  <li data-content-text="overview.workstreams.infrastructure.items.0">Monitor servers, databases and the
+                    wider monitoring environment.</li>
+                  <li data-content-text="overview.workstreams.infrastructure.items.1">Send outage notifications for
+                    IT-related service interruptions.</li>
+                  <li data-content-text="overview.workstreams.infrastructure.items.2">Open an incident when an issue
+                    occurs.</li>
+                  <li data-content-text="overview.workstreams.infrastructure.items.3">Escalate and follow up on issues
+                    until they are resolved.</li>
+                </ul>
+              </article>
+              <article class="workstream-card atm-track">
+                <div class="workstream-label" data-content-text="overview.workstreams.atm.label">02 · ATM Operations
+                </div>
+                <h3 data-content-text="overview.workstreams.atm.title">Follow ATM faults</h3>
+                <p data-content-text="overview.workstreams.atm.description">Monitor ATM faults and service status, then
+                  follow reported issues through to resolution.</p>
+              </article>
+            </div>
+            <div class="procedures-status" role="note">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z" stroke="currentColor"
+                  stroke-width="1.7" />
+                <path d="M14 3.5V8h4M9 12h6M9 15.5h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
               </svg>
-              <div>
-                <div class="stat-figure js-ring-value">0%</div>
-                <div class="stat-caption">Access &amp; tasks complete</div>
+              <div><strong data-content-text="overview.procedures.label">Procedures PDF</strong><span
+                  data-content-text="overview.procedures.status">Path to procedures: shared//documents/ATM
+                  Procedure/IT Monitoring Procedure V5.0.pdf</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2 data-content-text="overview.timeline.heading">Your first four weeks</h2>
+            <p data-content-text="overview.timeline.description">A rough shape for how access and responsibility ramp
+              up. Track the detail on the Access checklist page.</p>
+          </div>
+          <div class="timeline">
+            <div class="t-step">
+              <div class="t-dot"></div>
+              <div class="t-week" data-content-text="overview.timeline.weeks.0.label">Week 1</div>
+              <div class="t-title" data-content-text="overview.timeline.weeks.0.title">Learn the floor</div>
+              <div class="t-desc" data-content-text="overview.timeline.weeks.0.description">Read ATM procedures, shadow
+                live shifts, get familiar with the ticketing system.</div>
+            </div>
+            <div class="t-step">
+              <div class="t-dot"></div>
+              <div class="t-week" data-content-text="overview.timeline.weeks.1.label">Week 2</div>
+              <div class="t-title" data-content-text="overview.timeline.weeks.1.title">Start logging</div>
+              <div class="t-desc" data-content-text="overview.timeline.weeks.1.description">Create and close IT
+                incidents, send your first outage notifications.</div>
+            </div>
+            <div class="t-step">
+              <div class="t-dot"></div>
+              <div class="t-week" data-content-text="overview.timeline.weeks.2.label">Week 3</div>
+              <div class="t-title" data-content-text="overview.timeline.weeks.2.title">Access rollout</div>
+              <div class="t-desc" data-content-text="overview.timeline.weeks.2.description">Submit remaining access
+                requests and get monitoring credentials granted.</div>
+            </div>
+            <div class="t-step">
+              <div class="t-dot"></div>
+              <div class="t-week" data-content-text="overview.timeline.weeks.3.label">Week 4</div>
+              <div class="t-title" data-content-text="overview.timeline.weeks.3.title">Independent shift</div>
+              <div class="t-desc" data-content-text="overview.timeline.weeks.3.description">Handle ATM incidents on CA
+                end‑to‑end and cover a monitoring shift solo.</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2 data-content-text="overview.collaboration.heading">Who we work with</h2>
+            <p data-content-text="overview.collaboration.description">The IT Monitor team sits at the center — here's
+              who to loop in for what.</p>
+          </div>
+          <div class="hub">
+            <div class="hub-center">
+              <div class="hc-title" data-content-text="overview.collaboration.center.title">IT Monitor Team</div>
+              <div class="hc-sub" data-content-text="overview.collaboration.center.subtitle">that's us</div>
+            </div>
+            <div class="hub-line"></div>
+            <div class="hub-group-label" data-content-text="overview.collaboration.groups.0.label">Business &amp;
+              operations</div>
+            <div class="hub-row">
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.0.teams.0.name">HQ Team</h4>
+                <p data-content-text="overview.collaboration.groups.0.teams.0.description">ATM replenishment and cash
+                  reconciliation.</p>
+              </div>
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.0.teams.1.name">ATM Optimization</h4>
+                <p data-content-text="overview.collaboration.groups.0.teams.1.description">New ATM installs, removals
+                  and replacements; coordinates landlord permissions and site issues.</p>
+              </div>
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.0.teams.2.name">IT Digital Payment</h4>
+                <p data-content-text="overview.collaboration.groups.0.teams.2.description">Owns transactions (123,
+                  Host), ATM batch runs, online transactions and Power Card.</p>
+              </div>
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.0.teams.3.name">IT ITSM</h4>
+                <p data-content-text="overview.collaboration.groups.0.teams.3.description">Runs the service desk and
+                  owns the monitoring dashboards.</p>
               </div>
             </div>
-            <div class="stat-card">
-              <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--live-dim)"/><path d="M18 29l7 7 13-15" stroke="var(--brand)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-              <div>
-                <div class="stat-figure js-done-count">0</div>
-                <div class="stat-caption">Items completed</div>
+
+            <div class="hub-group-label" data-content-text="overview.collaboration.groups.1.label">Infrastructure</div>
+            <div class="hub-row">
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.1.teams.0.name">IT DBA</h4>
+                <p data-content-text="overview.collaboration.groups.1.teams.0.description">Disk space on Windows servers
+                  and ETL jobs.</p>
+              </div>
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.1.teams.1.name">IT AIX</h4>
+                <p data-content-text="overview.collaboration.groups.1.teams.1.description">Disk space on Linux servers,
+                  IPN and transaction servers.</p>
+              </div>
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.1.teams.2.name">IT Admin</h4>
+                <p data-content-text="overview.collaboration.groups.1.teams.2.description">Admin server ownership.</p>
+              </div>
+              <div class="hub-card">
+                <h4 data-content-text="overview.collaboration.groups.1.teams.3.name">Application Support</h4>
+                <p data-content-text="overview.collaboration.groups.1.teams.3.description">RPA, SMS and Laserfiche
+                  applications.</p>
               </div>
             </div>
-            <div class="stat-card">
-              <svg viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="26" fill="var(--pending-dim)"/><path d="M28 17v12l8 5" stroke="var(--pending)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-              <div>
-                <div class="stat-figure js-pending-count">0</div>
-                <div class="stat-caption">Still pending</div>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <div class="section-head">
-          <h2>Team mission</h2>
-        </div>
-        <div class="panel">
-          <p style="font-size:15px;color:var(--text);line-height:1.7;">Ensure continuous monitoring of IT infrastructure, ATM operations and banking services, catching issues before they reach customers and keeping availability high across the network.</p>
-        </div>
-      </section>
+        <section>
+          <div class="section-head">
+            <h2 data-content-text="overview.responsibilities.heading">Day-to-day responsibilities</h2>
+          </div>
+          <ul class="resp-list">
+            <li data-content-text="overview.responsibilities.items.0">Monitor servers, databases and IT monitoring
+              services</li>
+            <li data-content-text="overview.responsibilities.items.1">Send IT-related outage notifications</li>
+            <li data-content-text="overview.responsibilities.items.2">Open incidents when an issue occurs</li>
+            <li data-content-text="overview.responsibilities.items.3">Escalate and follow up until issues are resolved
+            </li>
+            <li data-content-text="overview.responsibilities.items.4">Monitor and follow ATM faults</li>
+          </ul>
+        </section>
 
-      <section>
-        <div class="section-head">
-          <h2>Your first four weeks</h2>
-          <p>A rough shape for how access and responsibility ramp up. Track the detail on the Access checklist page.</p>
+        <div class="page-foot">
+          <span data-content-text="site.footer.organization">NBK Egypt — IT Enterprise Monitoring</span>
+          <span data-content-text="site.footer.notice">Internal onboarding reference · not for external
+            distribution</span>
         </div>
-        <div class="timeline">
-          <div class="t-step">
-            <div class="t-dot"></div>
-            <div class="t-week">Week 1</div>
-            <div class="t-title">Learn the floor</div>
-            <div class="t-desc">Read ATM procedures, shadow live shifts, get familiar with the ticketing system.</div>
-          </div>
-          <div class="t-step">
-            <div class="t-dot"></div>
-            <div class="t-week">Week 2</div>
-            <div class="t-title">Start logging</div>
-            <div class="t-desc">Create and close IT incidents, send your first outage notifications.</div>
-          </div>
-          <div class="t-step">
-            <div class="t-dot"></div>
-            <div class="t-week">Week 3</div>
-            <div class="t-title">Access rollout</div>
-            <div class="t-desc">Submit remaining access requests and get monitoring credentials granted.</div>
-          </div>
-          <div class="t-step">
-            <div class="t-dot"></div>
-            <div class="t-week">Week 4</div>
-            <div class="t-title">Independent shift</div>
-            <div class="t-desc">Handle ATM incidents on CA end‑to‑end and cover a monitoring shift solo.</div>
-          </div>
-        </div>
-      </section>
 
-      <section>
-        <div class="section-head">
-          <h2>Who we work with</h2>
-          <p>The IT Monitor team sits at the center — here's who to loop in for what.</p>
-        </div>
-        <div class="hub">
-          <div class="hub-center">
-            <div class="hc-title">IT Monitor Team</div>
-            <div class="hc-sub">that's us</div>
-          </div>
-          <div class="hub-line"></div>
-          <div class="hub-group-label">Business &amp; operations</div>
-          <div class="hub-row">
-            <div class="hub-card">
-              <h4>HQ Team</h4>
-              <p>ATM replenishment and cash reconciliation.</p>
-            </div>
-            <div class="hub-card">
-              <h4>ATM Optimization</h4>
-              <p>New ATM installs, removals and replacements; coordinates landlord permissions and site issues.</p>
-            </div>
-            <div class="hub-card">
-              <h4>IT Digital Payment</h4>
-              <p>Owns transactions (123, Host), ATM batch runs, online transactions and Power Card.</p>
-            </div>
-            <div class="hub-card">
-              <h4>IT ITSM</h4>
-              <p>Runs the service desk and owns the monitoring dashboards.</p>
-            </div>
-          </div>
-
-          <div class="hub-group-label">Infrastructure</div>
-          <div class="hub-row">
-            <div class="hub-card">
-              <h4>IT DBA</h4>
-              <p>Disk space on Windows servers and ETL jobs.</p>
-            </div>
-            <div class="hub-card">
-              <h4>IT AIX</h4>
-              <p>Disk space on Linux servers, IPN and transaction servers.</p>
-            </div>
-            <div class="hub-card">
-              <h4>IT Admin</h4>
-              <p>Admin server ownership.</p>
-            </div>
-            <div class="hub-card">
-              <h4>Application Support</h4>
-              <p>RPA, SMS and Laserfiche applications.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="section-head">
-          <h2>What you'll own day‑to‑day</h2>
-        </div>
-        <ul class="resp-list">
-          <li>Monitor ATM services around the clock</li>
-          <li>Watch network devices and servers</li>
-          <li>Create and manage incidents on CA</li>
-          <li>Track transaction flow across channels</li>
-          <li>Coordinate with vendors on site issues</li>
-          <li>Support new ATM deployments</li>
-          <li>Generate shift and status reports</li>
-          <li>Send outage notifications when service drops</li>
-        </ul>
-      </section>
-
-      <div class="page-foot">
-        <span>NBK Egypt — IT Enterprise Monitoring</span>
-        <span>Internal onboarding reference · not for external distribution</span>
       </div>
+    </main>
+  </div>
 
-    </div>
-  </main>
-</div>
-
-<script src="js/script.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/content.ar.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
